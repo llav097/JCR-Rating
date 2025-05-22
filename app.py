@@ -3,6 +3,11 @@ import json
 
 app = Flask(__name__)
 
+# Load pricay html
+@app.route("/privacy")
+def privacy_policy():
+    return render_template("privacy.html")
+
 # Load JSON once on startup
 with open("jcr_data.json", "r") as f:
     jcr_data = json.load(f)
