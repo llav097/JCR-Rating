@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify # type: ignore
+from flask import Flask, request, render_template, jsonify # type: ignore
 import json
 
 app = Flask(__name__)
